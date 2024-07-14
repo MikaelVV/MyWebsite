@@ -2,8 +2,7 @@
 let number1 = 1;
 let number2 = 2;
 let calculation;
-let firstName = prompt("Please enter your first name.");
-let lastName = prompt("Please enter your last name.");
+
 
 
 function appendToDisplayScreen(){
@@ -13,6 +12,10 @@ function appendToDisplayScreen(){
 }
 
 function showResults(){
-    
-    console.log(number1)
+    let firstNameBox = document.getElementById("firstname");
+    let lastNameBox = document.getElementById("lastname");
+    let firstNameValue = firstNameBox.value;
+    let lastNameValue = lastNameBox.value;
+
+    console.log(number1 +"\n" + firstNameValue + "\n" + lastNameValue)
 }
